@@ -22,7 +22,7 @@ class Landing extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 mx-auto text-center">
-                            <h1 className="display-5"> Search our branches </h1>
+                            <h1 className="display-5"> FInd A Branch </h1>
                             <hr />
                             <div className="input-group">
                                 <input 
@@ -40,7 +40,7 @@ class Landing extends Component {
                         <ul className="list-group">
                             {
                                 filteredLocations.map((location, index) => {
-                                    return <li className="list-group-item" key={index}>{location}</li>
+                                    return <li className="list-group-item" style={{ cursor: 'pointer' }} key={index}>{location}</li>
                                 })
                             }
                         </ul>
